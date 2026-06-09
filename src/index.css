@@ -20,6 +20,21 @@
 
 @variant dark (.dark &);
 
+/* Night mode: override flat grays with rich indigo-tinted darks for a vibrant dark theme */
+.dark {
+  --color-gray-950: #070710;
+  --color-gray-900: #0d0c1c;
+  --color-gray-800: #131226;
+  --color-gray-700: #1c1b32;
+}
+
+/* Soft ambient glow for dark mode atmosphere */
+.dark body {
+  background-image:
+    radial-gradient(ellipse 60% 40% at 15% 0%, rgba(99, 102, 241, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 85% 100%, rgba(139, 92, 246, 0.06) 0%, transparent 60%);
+}
+
 /* Custom animations */
 @keyframes fadeInUp {
   from {

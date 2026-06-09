@@ -21,16 +21,16 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-50 via-purple-50 to-blue-50 dark:from-gray-900 dark:via-purple-950/20 dark:to-blue-950/20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-50 via-purple-50 to-blue-50 dark:from-gray-900 dark:via-purple-950/50 dark:to-indigo-950/40">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-primary-400 to-purple-600 rounded-full opacity-10 blur-3xl animate-pulse"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-primary-400 to-purple-600 rounded-full opacity-10 dark:opacity-30 blur-3xl animate-pulse"></div>
         <div
-          className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-blue-400 to-purple-600 rounded-full opacity-10 blur-3xl animate-pulse"
+          className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-blue-400 to-purple-600 rounded-full opacity-10 dark:opacity-30 blur-3xl animate-pulse"
           style={{ animationDelay: "1s" }}
         ></div>
         <div
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-primary-300 to-blue-400 rounded-full opacity-5 blur-3xl animate-pulse"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-primary-300 to-blue-400 rounded-full opacity-5 dark:opacity-20 blur-3xl animate-pulse"
           style={{ animationDelay: "2s" }}
         ></div>
       </div>
@@ -69,7 +69,7 @@ const Hero = () => {
             <div className="max-w-5xl mx-auto mb-16">
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-600 via-purple-600 to-blue-600 rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
-                <div className="relative backdrop-blur-xl bg-white/90 dark:bg-gray-800/90 rounded-3xl shadow-2xl border border-white/20 dark:border-gray-700/20 p-8">
+                <div className="relative backdrop-blur-xl bg-white/90 dark:bg-gray-800/95 rounded-3xl shadow-2xl border border-white/20 dark:border-indigo-500/20 p-8">
                   <div className="flex flex-col lg:flex-row gap-4">
                     <div className="flex-1">
                       <div className="relative group">
@@ -159,7 +159,7 @@ const Hero = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <div className="group text-center p-6 rounded-2xl bg-gradient-to-br from-white/50 to-primary-50/50 dark:from-gray-800/50 dark:to-primary-900/20 backdrop-blur-sm border border-white/20 dark:border-gray-700/20 hover:scale-105 transition-all duration-300">
+              <div className="group text-center p-6 rounded-2xl bg-gradient-to-br from-white/50 to-primary-50/50 dark:from-gray-800/80 dark:to-primary-900/40 backdrop-blur-sm border border-white/20 dark:border-indigo-500/20 hover:scale-105 transition-all duration-300">
                 <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent mb-2">
                   50K+
                 </div>
@@ -170,7 +170,7 @@ const Hero = () => {
                   Updated daily
                 </div>
               </div>
-              <div className="group text-center p-6 rounded-2xl bg-gradient-to-br from-white/50 to-purple-50/50 dark:from-gray-800/50 dark:to-purple-900/20 backdrop-blur-sm border border-white/20 dark:border-gray-700/20 hover:scale-105 transition-all duration-300">
+              <div className="group text-center p-6 rounded-2xl bg-gradient-to-br from-white/50 to-purple-50/50 dark:from-gray-800/80 dark:to-purple-900/40 backdrop-blur-sm border border-white/20 dark:border-purple-500/20 hover:scale-105 transition-all duration-300">
                 <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-2">
                   10K+
                 </div>
@@ -181,7 +181,7 @@ const Hero = () => {
                   Top employers
                 </div>
               </div>
-              <div className="group text-center p-6 rounded-2xl bg-gradient-to-br from-white/50 to-blue-50/50 dark:from-gray-800/50 dark:to-blue-900/20 backdrop-blur-sm border border-white/20 dark:border-gray-700/20 hover:scale-105 transition-all duration-300">
+              <div className="group text-center p-6 rounded-2xl bg-gradient-to-br from-white/50 to-blue-50/50 dark:from-gray-800/80 dark:to-blue-900/40 backdrop-blur-sm border border-white/20 dark:border-blue-500/20 hover:scale-105 transition-all duration-300">
                 <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-blue-600 to-primary-600 bg-clip-text text-transparent mb-2">
                   5K+
                 </div>

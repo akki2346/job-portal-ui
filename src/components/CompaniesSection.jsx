@@ -28,7 +28,7 @@ const CompaniesSection = () => {
   }
 
   return (
-    <section className="relative py-24 bg-gradient-to-br from-white via-primary-50/30 to-purple-50/30 dark:from-gray-800 dark:via-gray-900 dark:to-purple-950/20 overflow-hidden">
+    <section className="relative py-24 bg-gradient-to-br from-white via-primary-50/30 to-purple-50/30 dark:from-gray-800 dark:via-gray-900 dark:to-indigo-950/40 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 right-0 w-72 h-72 bg-gradient-to-br from-primary-400/20 to-purple-400/20 rounded-full blur-3xl"></div>
@@ -37,7 +37,7 @@ const CompaniesSection = () => {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-primary-100 to-purple-100 dark:from-primary-900/30 dark:to-purple-900/30 text-primary-700 dark:text-primary-300 text-sm font-semibold mb-6 backdrop-blur-sm border border-primary-200/50 dark:border-primary-700/50">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-primary-100 to-purple-100 dark:from-primary-900/50 dark:to-purple-900/50 text-primary-700 dark:text-primary-300 text-sm font-semibold mb-6 backdrop-blur-sm border border-primary-200/50 dark:border-indigo-500/40">
             🏢 Industry Leaders
           </div>
           <h2 className="text-4xl md:text-6xl font-black text-gray-900 dark:text-white mb-6">
@@ -61,7 +61,7 @@ const CompaniesSection = () => {
             <Link
               key={company.name}
               to={`/companies/${company.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`}
-              className="group relative bg-white dark:bg-gray-800 backdrop-blur-xl rounded-3xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer border-2 border-gray-200 dark:border-gray-700 hover:border-primary-400 dark:hover:border-primary-600 transform hover:scale-105 hover:-translate-y-2 block"
+              className="group relative bg-white dark:bg-gray-800 backdrop-blur-xl rounded-3xl p-8 text-center shadow-lg hover:shadow-2xl dark:hover:shadow-indigo-500/10 transition-all duration-500 cursor-pointer border-2 border-gray-200 dark:border-gray-700 hover:border-primary-400 dark:hover:border-indigo-500/60 transform hover:scale-105 hover:-translate-y-2 block"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Glassmorphism effect */}

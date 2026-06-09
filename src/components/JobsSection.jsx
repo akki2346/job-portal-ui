@@ -68,7 +68,7 @@ const JobsSection = () => {
   // Show loading skeleton
   if (loading) {
     return (
-      <section className="relative py-24 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 overflow-hidden">
+      <section className="relative py-24 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-950 dark:via-gray-900 dark:to-indigo-950/30 overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-black text-gray-900 dark:text-white mb-6">
@@ -86,7 +86,7 @@ const JobsSection = () => {
   }
 
   return (
-    <section className="relative py-24 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 overflow-hidden">
+    <section className="relative py-24 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-950 dark:via-gray-900 dark:to-indigo-950/30 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-primary-400/10 to-purple-400/10 rounded-full blur-3xl"></div>
@@ -95,7 +95,7 @@ const JobsSection = () => {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-primary-100 to-purple-100 dark:from-primary-900/30 dark:to-purple-900/30 text-primary-700 dark:text-primary-300 text-sm font-semibold mb-6 backdrop-blur-sm border border-primary-200/50 dark:border-primary-700/50">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-primary-100 to-purple-100 dark:from-primary-900/50 dark:to-purple-900/50 text-primary-700 dark:text-primary-300 text-sm font-semibold mb-6 backdrop-blur-sm border border-primary-200/50 dark:border-indigo-500/40">
             💼 Premium Job Opportunities
           </div>
           <h2 className="text-4xl md:text-6xl font-black text-gray-900 dark:text-white mb-6">
@@ -153,7 +153,7 @@ const JobsSection = () => {
             <Link
               key={job.id}
               to={`/jobs/${job.id}`}
-              className="group relative bg-white dark:bg-gray-800 backdrop-blur-xl rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 p-8 border-2 border-gray-200 dark:border-gray-700 hover:border-primary-400 dark:hover:border-primary-600 cursor-pointer transform hover:scale-105 hover:-translate-y-2 block"
+              className="group relative bg-white dark:bg-gray-800 backdrop-blur-xl rounded-3xl shadow-lg hover:shadow-2xl dark:hover:shadow-indigo-500/10 transition-all duration-500 p-8 border-2 border-gray-200 dark:border-gray-700 hover:border-primary-400 dark:hover:border-indigo-500/60 cursor-pointer transform hover:scale-105 hover:-translate-y-2 block"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Gradient border effect */}
