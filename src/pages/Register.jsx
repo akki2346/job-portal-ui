@@ -123,7 +123,7 @@ const Register = () => {
   };
 
   return (
-    <div className={`min-h-[calc(100vh-5rem)] ${theme === 'dark' ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900' : 'bg-gradient-to-br from-gray-50 via-white to-primary-50'} flex items-center justify-center px-4 py-12 relative`}>
+    <div className={`min-h-[calc(100vh-5rem)] ${theme === 'dark' ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-indigo-950/50' : 'bg-gradient-to-br from-gray-50 via-white to-primary-50'} flex items-center justify-center px-4 py-12 relative`}>
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-purple-200/30 to-primary-200/30 rounded-full blur-3xl"></div>

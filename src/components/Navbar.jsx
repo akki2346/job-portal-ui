@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-xl bg-white/80 dark:bg-gray-900/80 shadow-2xl shadow-primary-500/10 dark:shadow-primary-400/10 border-b border-gray-200/20 dark:border-gray-700/20 transition-all duration-300">
+    <nav className="sticky top-0 z-50 backdrop-blur-xl bg-white/80 dark:bg-gray-900/90 shadow-2xl shadow-primary-500/10 dark:shadow-indigo-500/15 border-b border-gray-200/20 dark:border-indigo-500/15 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
@@ -152,7 +152,7 @@ const Navbar = () => {
                   </button>
 
                   {showUserMenu && (
-                    <div className="absolute right-0 mt-2 w-64 bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 py-2 z-50">
+                    <div className="absolute right-0 mt-2 w-64 bg-white dark:bg-gray-800 rounded-xl shadow-lg dark:shadow-indigo-500/10 border border-gray-200 dark:border-indigo-500/20 py-2 z-50">
                       <div className="px-4 py-3 border-b border-gray-200 dark:border-gray-700">
                         <p className="text-sm font-medium text-gray-900 dark:text-gray-100">
                           {user.name}
